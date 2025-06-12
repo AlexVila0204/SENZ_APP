@@ -11,19 +11,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.22.2'
-          channel: 'stable'
-          cache: true
-
-      # 3. Ahora sí puedes ejecutar comandos de Flutter
-      - name: Install dependencies
-        run: flutter pub get
-
-      # 4. Agrega aquí otros comandos que necesites
       - name: Run tests
-        run: flutter test
+        run: |
+          flutter pub get
+          flutter test
+
+      - name: Check formatting
+        run: |
+          flutter format --set-exit-if-changed .
+
+      - name: Analyze code
+        run: |
+          flutter analyze 
