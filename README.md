@@ -1,16 +1,62 @@
-# senz_app
+# SENZ - Aplicación Móvil
 
-A new Flutter project.
+## 📱 Descripción
+SENZ es una aplicación móvil desarrollada con Flutter que permite a los usuarios gestionar y monitorear sus sensores de manera eficiente. La aplicación ofrece una interfaz intuitiva y moderna para el control de dispositivos IoT.
 
-## Getting Started
+## 🚀 Características Principales
+- Interfaz de usuario moderna y responsiva
+- Gestión de sensores en tiempo real
+- Monitoreo de datos y estadísticas
+- Notificaciones personalizadas
+- Soporte multiplataforma (iOS y Android)
 
-This project is a starting point for a Flutter application.
+## 🛠️ Tecnologías Utilizadas
+- Flutters
+- Dart
 
-A few resources to get you started if this is your first Flutter project:
+## 📋 Requisitos Previos
+- Flutter SDK (versión 3.0.0 o superior)
+- Dart SDK (versión 2.17.0 o superior)
+- Android Studio / VS Code
+- Git
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🔧 Instalación
+1. Clona el repositorio:
+```bash
+git clone https://github.com/AlexVila0204/SENZ_APP.git
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. Navega al directorio del proyecto:
+```bash
+cd SENZ_APP
+```
+
+3. Instala las dependencias:
+```bash
+flutter pub get
+```
+
+4. Ejecuta la aplicación:
+```bash
+flutter run
+```
+
+## 📱 Capturas de Pantalla
+[Agregar capturas de pantalla de la aplicación aquí]
+
+## 👥 Contribuidores
+- [AlexVila0204](https://github.com/AlexVila0204)
+- [KevinBanegasUNITEC](https://github.com/KevinBanegasUNITEC)
+- [Walther Carrasco](https://github.com/walthercarrasco)
+
+## 📄 Licencia
+Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
+
+## 📞 Contacto
+Para soporte o consultas, por favor contacta a:
+- Email: [godoyalberth.0204@gmail.com]
+- GitHub: [AlexVila0204](https://github.com/AlexVila0204)
+
+## 🙏 Agradecimientos
+- Flutter Team por el increíble framework
+- Todos los contribuidores que han ayudado en el proyecto
