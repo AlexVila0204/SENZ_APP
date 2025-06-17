@@ -42,12 +42,14 @@ flutter run
 ```
 
 ## 📱 Capturas de Pantalla
-[Agregar capturas de pantalla de la aplicación aquí]
+[FALTA]
 
 ## 👥 Contribuidores
 - [AlexVila0204](https://github.com/AlexVila0204)
 - [KevinBanegasUNITEC](https://github.com/KevinBanegasUNITEC)
 - [Walther Carrasco](https://github.com/walthercarrasco)
+
+Leer README para contribuidores
 
 ## 📄 Licencia
 Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
