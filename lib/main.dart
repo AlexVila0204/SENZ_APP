@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'screens/login_screen.dart';
 import 'screens/home_screen.dart';
 import 'screens/profile_screen.dart';
 import 'screens/account_screen.dart';
@@ -28,7 +27,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MainApp extends StatefulWidget {
-  const MainApp({Key? key}) : super(key: key);
+  const MainApp({super.key});
 
   @override
   State<MainApp> createState() => _MainAppState();

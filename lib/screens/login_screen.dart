@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  const LoginScreen({super.key});
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
@@ -24,7 +24,7 @@ class _LoginScreenState extends State<LoginScreen> {
               CircleAvatar(
                 radius: 40,
                 backgroundColor: Colors.blue[500],
-                child: Icon(Icons.pan_tool, color: Colors.white, size: 48),
+                child: const Icon(Icons.pan_tool, color: Colors.white, size: 48),
               ),
               const SizedBox(height: 16),
               const Text(
@@ -68,10 +68,10 @@ class _LoginScreenState extends State<LoginScreen> {
 
               const SizedBox(height: 16),
               // Divider
-              Row(
+              const Row(
                 children: [
                   Expanded(child: Divider()),
-                  const Padding(
+                  Padding(
                     padding: EdgeInsets.symmetric(horizontal: 8.0),
                     child: Text('O continúa con', style: TextStyle(color: Colors.grey)),
                   ),
@@ -81,7 +81,7 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(height: 16),
 
               // Social buttons
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   _SocialButton(
@@ -90,7 +90,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     color: Colors.white,
                     textColor: Colors.black,
                   ),
-                  const SizedBox(width: 16),
+                  SizedBox(width: 16),
                   _SocialButton(
                     icon: Icons.apple,
                     text: 'Apple',
@@ -129,7 +129,7 @@ class _TabButton extends StatelessWidget {
           decoration: BoxDecoration(
             border: Border(
               bottom: BorderSide(
-                color: selected ? Color(0xFF2563EB) : Colors.transparent,
+                color: selected ? const Color(0xFF2563EB) : Colors.transparent,
                 width: 2,
               ),
             ),
@@ -138,7 +138,7 @@ class _TabButton extends StatelessWidget {
             text,
             textAlign: TextAlign.center,
             style: TextStyle(
-              color: selected ? Color(0xFF2563EB) : Colors.grey,
+              color: selected ? const Color(0xFF2563EB) : Colors.grey,
               fontWeight: FontWeight.w600,
             ),
           ),
@@ -154,9 +154,9 @@ class _LoginForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        _InputField(label: 'Correo electrónico', obscure: false),
+        const _InputField(label: 'Correo electrónico', obscure: false),
         const SizedBox(height: 12),
-        _InputField(label: 'Contraseña', obscure: true),
+        const _InputField(label: 'Contraseña', obscure: true),
         const SizedBox(height: 8),
         Align(
           alignment: Alignment.centerRight,
@@ -169,8 +169,8 @@ class _LoginForm extends StatelessWidget {
         ElevatedButton(
           onPressed: () {},
           style: ElevatedButton.styleFrom(
-            backgroundColor: Color(0xFF2563EB),
-            minimumSize: Size(double.infinity, 48),
+            backgroundColor: const Color(0xFF2563EB),
+            minimumSize: const Size(double.infinity, 48),
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
           ),
           child: const Text('Iniciar sesión', style: TextStyle(fontSize: 16)),
@@ -186,17 +186,17 @@ class _RegisterForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        _InputField(label: 'Correo electrónico', obscure: false),
+        const _InputField(label: 'Correo electrónico', obscure: false),
         const SizedBox(height: 12),
-        _InputField(label: 'Contraseña', obscure: true),
+        const _InputField(label: 'Contraseña', obscure: true),
         const SizedBox(height: 12),
-        _InputField(label: 'Confirmar contraseña', obscure: true),
+        const _InputField(label: 'Confirmar contraseña', obscure: true),
         const SizedBox(height: 16),
         ElevatedButton(
           onPressed: () {},
           style: ElevatedButton.styleFrom(
-            backgroundColor: Color(0xFF2563EB),
-            minimumSize: Size(double.infinity, 48),
+            backgroundColor: const Color(0xFF2563EB),
+            minimumSize: const Size(double.infinity, 48),
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
           ),
           child: const Text('Registrarse', style: TextStyle(fontSize: 16)),
@@ -250,7 +250,7 @@ class _SocialButton extends StatelessWidget {
         label: Text(text, style: TextStyle(color: textColor)),
         style: ElevatedButton.styleFrom(
           backgroundColor: color,
-          minimumSize: Size(0, 48),
+          minimumSize: const Size(0, 48),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
           elevation: 0,
         ),
